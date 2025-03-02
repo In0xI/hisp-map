@@ -1,0 +1,25 @@
+[
+    {
+        "name": "Hemp",
+        "coordinates": [841.3125, 729.6875],
+        "icon": "img/hempIcon32.webp",
+        "iconSize": [32, 32],
+        "iconAnchor": [16, 32],
+        "popupAnchor": [0, -32],
+        "popupText": "<b>Hemp</b><br>Recurso de hemp"
+    },
+    {
+        "name": "Base enemiga",
+        "coordinates": [845.125, 283.875],
+        "popupText": "<b>Base enemiga</b><br>Base de OG"
+    },
+    {
+        "name": "Zona peligrosa",
+        "coordinates": [893.5, 932],
+        "type": "circle",
+        "color": "red",
+        "fillColor": "#f03",
+        "fillOpacity": 0.5,
+        "radius": 100
+    }
+]
