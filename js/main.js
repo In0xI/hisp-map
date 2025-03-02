@@ -61,7 +61,13 @@ fetch('markers.json')
     })
     .catch(error => console.error('Error cargando los marcadores:', error));
 
-// Evento de doble clic en el mapa
-map.on('click', function(e) {
-    alert("Coordenadas: " + e.latlng);
+// Obtener el elemento donde se mostrarán las coordenadas
+var coordsDisplay = document.getElementById('coords');
+
+// Evento para actualizar las coordenadas al mover el ratón sobre el mapa
+map.on('mousemove', function(e) {
+    // Obtener las coordenadas del ratón (en el sistema de coordenadas de la imagen)
+    var coords = e.latlng;
+    // Actualizar el contenido del span con las coordenadas
+    coordsDisplay.textContent = `(${coords.lat.toFixed(4)}, ${coords.lng.toFixed(4)})`;
 });
