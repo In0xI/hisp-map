@@ -1,7 +1,7 @@
 // Coordenadas de los límites de la imagen (esquina superior izquierda y esquina inferior derecha)
 var bounds = [
     [0, 0],           // Esquina superior izquierda (y, x)
-    [3000, 4000]      // Esquina inferior derecha (y, x)
+    [4000, 3000]      // Esquina inferior derecha (y, x)
 ];
 
 // Crear el mapa
