@@ -64,10 +64,25 @@ fetch('markers.json')
 // Obtener el elemento donde se mostrarán las coordenadas
 var coordsDisplay = document.getElementById('coords');
 
+// Variable para almacenar las coordenadas actuales del ratón
+var currentCoords = null;
+
 // Evento para actualizar las coordenadas al mover el ratón sobre el mapa
 map.on('mousemove', function(e) {
     // Obtener las coordenadas del ratón (en el sistema de coordenadas de la imagen)
-    var coords = e.latlng;
+    currentCoords = e.latlng;
     // Actualizar el contenido del span con las coordenadas
-    coordsDisplay.textContent = `(${coords.lat.toFixed(4)}, ${coords.lng.toFixed(4)})`;
+    coordsDisplay.textContent = `(${currentCoords.lat.toFixed(4)}, ${currentCoords.lng.toFixed(4)})`;
+});
+
+// Evento para capturar la pulsación de la tecla "c"
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'c' || event.key === 'C') { // Capturar tanto "c" como "C"
+        if (currentCoords) {
+            // Mostrar un alert con las coordenadas actuales
+            alert(`Coordenadas actuales: (${currentCoords.lat.toFixed(4)}, ${currentCoords.lng.toFixed(4)})`);
+        } else {
+            alert("Mueve el ratón sobre el mapa para obtener las coordenadas.");
+        }
+    }
 });
