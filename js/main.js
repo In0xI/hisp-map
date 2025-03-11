@@ -1,7 +1,7 @@
 // Coordenadas de los límites de la imagen (esquina superior izquierda y esquina inferior derecha)
 var bounds = [
     [0, 0],           // Esquina superior izquierda (y, x)
-    [2000, 2000]      // Esquina inferior derecha (y, x)
+    [3000, 4000]      // Esquina inferior derecha (y, x)
 ];
 
 // Crear el mapa
@@ -12,7 +12,7 @@ var map = L.map('map', {
 });
 
 // Añadir la imagen como capa base
-var image = L.imageOverlay('img/anvil_map.png', bounds).addTo(map);
+var image = L.imageOverlay('img/anvil_map.jpeg', bounds).addTo(map);
 
 // Ajustar la vista del mapa al centro de la imagen
 map.fitBounds(bounds);
