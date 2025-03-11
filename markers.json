@@ -9,6 +9,16 @@
         "popupText": "<b>Hemp</b><br>Recurso de hemp"
     },
     {
+        "name": "Hemp",
+        "coordinates": [2003.5000, 655.1250],
+        "icon": "img/hempIcon32.webp",
+        "iconSize": [32, 32],
+        "iconAnchor": [16, 32],
+        "popupAnchor": [0, -32],
+        "popupText": "<b>Hemp</b><br>Recurso de hemp"
+    },
+    
+    {
         "name": "Base enemiga",
         "coordinates": [845.125, 283.875],
         "popupText": "<b>Base enemiga</b><br>Base de OG"
